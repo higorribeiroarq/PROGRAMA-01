@@ -1,0 +1,28 @@
+# Briefings do squad
+
+Texto comum a todos os subagentes (cole no início de cada prompt):
+
+> Você faz parte de um squad que escreve um curso de programação em português para um aluno que começa do ABSOLUTO ZERO. Antes de escrever, leia por completo: `curso-programacao/GUIA-DE-ESTILO.md` (regras OBRIGATÓRIAS), `curso-programacao/README.md` (índice e nomes de pastas) e `curso-programacao/.roadmap-fonte.txt` (texto do PDF-base). Se sua pasta já tiver arquivos, leia-os e complete só o que falta. Cada aula com todas as seções do guia; exercícios em 3 níveis (mínimo 2🟢 2🟡 1🔴 por aula) com dicas em `<details>`; gabarito completo. Todo código correto e executável — teste trechos JS com `node` quando possível; não invente APIs. Não toque em arquivos fora das suas pastas e não faça commit. Ao terminar, responda com a lista de arquivos criados e o número de exercícios (curto).
+
+## Squad 1 — etapa-00-preparacao + etapa-01-fundamentos
+- **etapa-00-preparacao/**: README.md (com "mini-desafio de prontidão"), aula-01-o-que-e-programar.md (programa, código, linguagem, como o computador "lê", web: navegador/servidor/internet — analogia restaurante), aula-02-preparando-o-computador.md (VS Code, Node.js LTS, Git; terminal; cd/ls/dir/mkdir; `node -v`; Windows PowerShell e macOS/Linux), aula-03-como-estudar-e-usar-ia.md (rotina semanal do PDF, ler mensagem de erro, pesquisar, IA sem pular etapas), exercicios.md, gabarito.md. Sem projeto-entregavel.
+- **etapa-01-fundamentos/** (meses 1–2): aulas 01 lógica e algoritmos (sem código), 02 variáveis e tipos em JS com node, 03 condições, 04 repetições, 05 funções, 06 HTML semântico, 07 CSS e responsivo (box model, flexbox, media queries), 08 JS no navegador (DOM, eventos), 09 Git e GitHub (commit, branch, README, push). README.md, exercicios.md, gabarito.md, projeto-entregavel.md (página pessoal responsiva + lista de tarefas com JS).
+
+## Squad 2 — etapa-02-javascript-typescript (meses 3–4)
+Aluno já viu lógica, variáveis, if, laços, funções, HTML/CSS, DOM, Git.
+Aulas: 01 arrays e métodos (map, filter, find, reduce), 02 objetos e JSON, 03 escopo, const/let, arrow functions, 04 módulos (import/export), 05 tratamento de erros (try/catch, stack trace, depuração no VS Code), 06 assincronia: callbacks, Promises, async/await, 07 fetch e APIs públicas (ex.: ViaCEP), 08 localStorage, 09 TypeScript: tipos básicos, 10 TypeScript: interfaces, type, unions, narrowing, 11 IA como assistente de código. README.md, exercicios.md, gabarito.md, projeto-entregavel.md (app que consome API pública e salva preferências no navegador).
+
+## Squad 3 — etapa-03-backend-nestjs (meses 5–6)
+Aluno já sabe JS moderno e TS básico.
+Aulas: 01 backend e HTTP (métodos, status; analogia garçom/cozinha), 02 Node.js: npm, package.json, módulos, .env, event loop simples, 03 API com Node puro (http), 04 REST e como testar (Thunder Client/Insomnia/curl), 05 NestJS: CLI, módulos, controllers, services, 06 injeção de dependência e middlewares, 07 validação com DTO e class-validator, 08 SQL com PostgreSQL (SELECT/INSERT/UPDATE/DELETE, JOIN, chaves), 09 ORM, modelagem e migrações (Prisma OU TypeORM — escolha um, justifique, seja consistente), 10 autenticação (bcrypt, JWT) e autorização (guards, papéis), 11 testes com Jest no NestJS, 12 Swagger e IA para investigar erros. README.md, exercicios.md, gabarito.md, projeto-entregavel.md (API de catálogo ou tarefas com cadastro, login e documentação). NestJS 11 / Node 22+.
+
+## Squad 4 — etapa-04-frontend-nextjs (meses 7–8)
+Aluno já tem API NestJS com JWT e Swagger.
+Aulas: 01 por que React, JSX, 02 props e composição, 03 useState e eventos, 04 formulários controlados e validação, 05 listas, keys, renderização condicional, 06 useEffect e quando não usar, 07 Next.js: create-next-app (TS), App Router, layouts, Link, 08 Server x Client Components, 09 dados: fetch no servidor, loading.tsx, error.tsx, estado vazio, 10 acessibilidade, 11 integração com a API NestJS (NEXT_PUBLIC_, CORS), 12 sessão e área autenticada (cookie httpOnly via Route Handler/Server Action, middleware). README.md, exercicios.md, gabarito.md, projeto-entregavel.md (produto com busca, formulários e área autenticada). React 19 / Next.js 15+.
+
+## Squad 5 — etapa-05-fullstack + etapa-06-portfolio + etapa-07-carreira
+- **etapa-05-fullstack** (meses 9–10): 01 planejar produto (problema, MVP, histórias de usuário, backlog), 02 estrutura e configuração (.env, segredos, .gitignore), 03 segurança básica (injeção, senhas, CORS, rate limit, helmet, validação), 04 logs e falhas (exception filters, erros no front), 05 testes do fluxo principal (supertest, noção de Playwright), 06 PRs e revisão (IA como apoio), 07 deploy: Next.js na Vercel, NestJS + PostgreSQL no Railway (variáveis, migrações, URL pública — passos que resistam a mudanças de interface, com link para doc oficial), 08 documentar decisões. Projeto: app com problema definido, dados persistentes e URL pública.
+- **etapa-06-portfolio** (mês 11): 01 portfólio com 2–3 projetos, 02 README excelente (modelo), 03 issues, branches, PRs e code review, 04 contribuir com open source. Projeto: pedir revisão e melhorar um projeto com o feedback.
+- **etapa-07-carreira** (mês 12): 01 LinkedIn, 02 currículo e controle de candidaturas (tabela), 03 entrevista técnica (6+ problemas clássicos de lógica em JS, falar em voz alta), 04 entrevista comportamental (STAR com exemplos dos projetos). Projeto: LinkedIn + currículo + simulação e ajuste.
+- Nas etapas 06 e 07 os exercícios podem ser tarefas práticas/reflexivas, mantendo os 3 níveis.
+- Todas com README.md, exercicios.md, gabarito.md, projeto-entregavel.md.
